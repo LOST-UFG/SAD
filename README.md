@@ -38,27 +38,28 @@ Antes de dar início, certifique-se que tenha em sua máquina:
 ### Rodando o projeto
 
 ```bash
-Clone este repositório
-$ git clone https://github.com/CS2020-1-CavaloTroia/UniCaronas
+1. Clone este repositório
+$ git clone https://github.com/LOST-UFG/SAD.git
 
-Acesse a pasta do projeto no seu terminal/cmd
-$ cd server/UniCaronas
+2. Acesse a pasta do projeto no seu terminal/cmd
+$ cd SAD
 
-Para o Linux, necessário instalar o pip
-$ apt install python3-pip
+3. Instale as dependências
+$ yarn
 
-Instale as dependências
-$ pip install Django==3.1.2 djangorestframework pyyaml django-rest-swagger dnspython djongo
+4. Crie o banco de dados utilizando o Script disponível em https://docs.google.com/document/d/12l-ZlKr_H6rQxS98UkdCiBEQhBkKraUTbcEy2OdACus
 
-Execute a criação do banco de dados
-$ python manage.py migrate
+5. Configure o .env e /SAD com as seguintes variáveis de ambiente
+SERVER_URL = ip da maquina onde será executado o SAD
+SERVER_PORT = porta onde será executado o SAD
+DB_HOST = IP para o servidor do banco de dados
+DB_USER = seu usuario do banco de dados
+DB_PASS = sua senha do banco de dados
+DB = sad
 
-Execute a aplicação
-$ python manage.py runserver
+6. Execute a aplicação
+$ yarn start
 
-A aplicação será aberta na porta:8000 - acesse http://localhost:8000
-Caso queira especificar a porta utilize
-$ python manage.py runserver <port>
 ```
 
 ## 💡 Como contribuir
