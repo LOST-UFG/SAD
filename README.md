@@ -71,8 +71,13 @@ $ python manage.py runserver <port>
 ## 👨‍💻 Autores
 
 Grupo Cavalo de Troia da turma de Construção de Software de 2020.1 da Universidade Federal de Goiás
-* Amanda Lobo Gomes
+* Abigail de Jesus Arruda
 * Alan Brito Barros
+* Amanda Lobo Gomes
 * Fernando Severino Almeida
+* Heitor Melo de Lucas Brandão
+* Jacob Ferraz dos Santos
+* Lucas Borges de Souza
 * Michelly Silva Lima
+* Victor Melo de Lucas Brandão
 
