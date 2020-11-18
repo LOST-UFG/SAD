@@ -62,7 +62,7 @@
         <div class="card">
           <div class="card-body">
             <h5 class="mb-3">Sistema de Avaliação Docente</h5>
-            <form>
+            <form enctype="application/x-www-form-urlencoded" action="auth?email=email&password=password" method="POST">
               <div class="form-group">
                 <label for="exampleInputEmail1">Email</label>
                 <div class="input-group mb-3">
@@ -70,11 +70,13 @@
                     <span class="input-group-text" id="basic-addon1">E</span>
                   </div>
                   <input
-                    type="email"
+                    type="text"
+                    name="email"
                     class="form-control"
                     placeholder="Informe seu email"
                     aria-label="Informe seu email"
                     aria-describedby="basic-addon1"
+                    value="fernandoseverino@ufg.br"
                     required
                   />
                 </div>
@@ -87,10 +89,12 @@
                   </div>
                   <input
                     type="password"
+                    name="password"
                     class="form-control"
                     placeholder="Informe sua senha"
                     aria-label="Informe sua senha"
                     aria-describedby="basic-addon1"
+                    value="12345"
                     required
                   />
                 </div>
