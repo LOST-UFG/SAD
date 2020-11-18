@@ -1,6 +1,6 @@
 const crypt = require("./../services/crypt");
 const connection = require("./dbConnection");
-const ModelDocente = require("./../model/entities/Docente");
+const ModelDocente = require("./../model/viewentities/Docente");
 
 module.exports = class Docente {
   async validarLogin(email, senha) {
