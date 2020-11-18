@@ -1,28 +1,27 @@
-const dbConnection = require("./../../services/dbConnection");
-const bcrypt = require("bcrypt");
-const mysql = require("mysql2");
-
 module.exports = class Docente {
-  async auth(email, senha) {
-    const hash = await bcrypt.hash(senha, 10);
-    const result = await bcrypt.compare(
-      senha,
-      "$2b$10$LddNkhF/E1JeolQvUHg4G.y8ounAvc5YdT2U26WK1AfBgeHWB3Ti."
-    );
+  Codigo_Docente = null;
+  Email = "";
+  Nome = "";
+  Sobrenome = "";
+  Senha = "";
+  Ano_Entrada = null;
+  Ano_Saida = null;
 
-    const pool = await mysql.createPool({
-      host: "localhost",
-      user: "root",
-      password: "@fer#1012",
-      database: "sad",
-    });
-
-    const promisePool = pool.promise();
-
-    const [rows, fields] = await promisePool.query(
-      "SELECT * FROM `Docente` limit 1"
-    );
-
-    console.log(rows);
+  constructor(
+    Codigo_Docente,
+    Email,
+    Nome,
+    Sobrenome,
+    Senha,
+    Ano_Entrada,
+    Ano_Saida
+  ) {
+    this.Codigo_Docente = Codigo_Docente;
+    this.Email = Email;
+    this.Nome = Nome;
+    this.Sobrenome = Sobrenome;
+    this.Senha = Senha;
+    this.Ano_Entrada = Ano_Entrada;
+    this.Ano_Saida = Ano_Saida;
   }
 };
