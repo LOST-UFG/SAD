@@ -1,1 +1,1 @@
-# SAD
+# SAD - Sistema de Avaliação Docente
