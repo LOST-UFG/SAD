@@ -16,6 +16,10 @@ Sistema de Avaliação Docente
 
 ## 💻 Sobre o projeto
 
+A UFG é uma instituição que preza pela formação de profissionais comprometidos com a transformação e desenvolvimento da sociedade. Está entre seus objetivos, se desenvolver cada vez mais para melhorar sua qualidade de ensino, pesquisa e extensão.
+Levando esses objetivos em consideração, chegamos a conclusão de que é de extrema importância a avaliação constante das atividades realizadas por nossos docentes, de forma a habilitar o processo de evolução de ensino, pesquisa e extensão da Universidade. Apesar dessa importância, o atual processo de avaliação está longe de ser o ideal.
+O docente deve registrar suas atividades no Sistema de Cadastro de Atividades Docentes (SICAD) anualmente. Após isso, é gerado o RADOC (Relatório de Atividades do Docente). A Comissão de Avaliação Docente (CAD), por sua vez, realiza a transcrição dessas atividades para planilhas eletrônicas para contabilização da pontuação das atividades do docente de acordo com a Resolução do CONSUNI em duas situações: Estágio Probatório e Progressão Horizontal.
+Como descrito acima, o processo conta com o uso de várias ferramentas, cuja a integração das informações entre essas plataformas é realizado manualmente. Além disso, não existe padronização nas planilhas avaliativas. Portanto, por ser um processo  oneroso, repetitivo e altamente sujeito a erros, principalmente quando consideramos um relatório de 1 (um) ano de atividades de vários professores, é imprescindível que se faça uma intervenção tecnológica para auxiliar este processo, automatizando-o.
 
 
 ## 🎨 Layout
