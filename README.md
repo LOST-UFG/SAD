@@ -25,7 +25,7 @@ O layout da aplicação está disponível [clicando aqui](https://docs.google.co
 ### Arquitetura
 
 - [ ] Diagrama Arquitetural
-<img src="https://lh6.googleusercontent.com/ZLiiqLn0r6Z-jb0PiXtJxhPi059jv7GMVPTX8sDeG8l9kwbFU9whg8jC-3NPYS6nUIk3PAqGw13EmghTuPRmFc39D5FaCOBczE4XazndewTA45QspWHxntiIv4_ZONp5fjHnpKhp" width="800">
+<img src="https://lh6.googleusercontent.com/ZLiiqLn0r6Z-jb0PiXtJxhPi059jv7GMVPTX8sDeG8l9kwbFU9whg8jC-3NPYS6nUIk3PAqGw13EmghTuPRmFc39D5FaCOBczE4XazndewTA45QspWHxntiIv4_ZONp5fjHnpKhp" width="600">
 
 ### Pré-requisitos
 
@@ -49,7 +49,7 @@ $ yarn
 
 4. Crie o banco de dados utilizando o Script disponível em https://docs.google.com/document/d/12l-ZlKr_H6rQxS98UkdCiBEQhBkKraUTbcEy2OdACus
 
-5. Configure o .env e /SAD com as seguintes variáveis de ambiente
+5. Configure o .env em ./SAD com as seguintes variáveis de ambiente
 SERVER_URL = ip da maquina onde será executado o SAD
 SERVER_PORT = porta onde será executado o SAD
 DB_HOST = IP para o servidor do banco de dados
