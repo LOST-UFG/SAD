@@ -12,57 +12,132 @@
       integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="//cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css"
+    />
 
+    <style>
+      body {
+        background-color: #3167AD;
+      }
+      #navigation {
+        background-color: #3167AD;
+        color: #ffffff;
+        margin-top: 5px!important;
+      }
+
+      li > a, li > p {
+        color: #ffffff;
+        margin: auto;
+        margin-left: 5px;
+      }
+
+      ul.nav {
+        padding: 10px 0!important;
+        
+      }
+
+      span.text-muted {
+        color: #FFFFFF!important;
+      }
+
+      div.card-body {
+        background-color: #DFE9F5!important;
+        color: #3167AD!important;
+        border-radius: 20px;
+      }
+
+      div > a{
+        color: #FFFFFF;
+      }
+
+      div.bg-white.card-footer.text-right{
+        background-color: #3167AD!important;
+        
+      }
+
+      .card {
+        border: none!important;
+        background-color: transparent!important;
+      }
+
+      a:hover{
+        color: #DFE9F5!important;
+      }
+    </style>
     <title>SAD | Sistema de Avaliação Docente</title>
   </head>
-  <body class="bg-light">
+  <body>
     <div
-      class="bg-white border-bottom container-fluid justify-content-end d-flex align-items-center mb-5"
+    id="navigation"
+      class="border-bottom container-fluid justify-content-end d-flex align-items-center mb-5"
     >
       <ul class="nav nav-pills nav-fill py-3">
         <li class="nav-item border-right">
           <a class="nav-link" href="#">Ativar contraste</a>
         </li>
         <li class="nav-item d-none d-sm-flex">
-          <a
-            class="nav-link disabled"
+          <p
             href="#"
             tabindex="-1"
-            aria-disabled="true"
             >Fonte:
-          </a>
+        </p>
         </li>
         <li class="nav-item d-none d-sm-flex">
-          <a class="nav-link" href="#">+</a>
+          <a class="nav-link" href="#"
+            ><span class="mdi mdi-magnify-plus-outline mdi-18px"></span
+          ></a>
         </li>
         <li class="nav-item border-right d-none d-sm-flex">
-          <a class="nav-link" href="#">-</a>
+          <a class="nav-link" href="#"
+            ><span class="mdi mdi-magnify-minus-outline mdi-18px"></span
+          ></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">BR</a>
+          <a class="nav-link" href="#">
+            <img
+              src="https://ufgnet.ufg.br/cas/images/Brazil.png;jsessionid=PUpPoiuIspAVg-mVr4xI17uB.undefined"
+              alt="Português"
+            />
+          </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">EN</a>
+          <a class="nav-link" href="#">
+            <img
+              src="https://ufgnet.ufg.br/cas/images/USA.png;jsessionid=PUpPoiuIspAVg-mVr4xI17uB.undefined"
+              alt="English"
+            />
+          </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">ES</a>
+          <a class="nav-link" href="#">
+            <img
+              src="https://ufgnet.ufg.br/cas/images/spain.png;jsessionid=PUpPoiuIspAVg-mVr4xI17uB.undefined"
+              alt="Español"
+            />
+          </a>
         </li>
       </ul>
     </div>
     <div class="container-fluid vh-100">
       <div class="d-flex justify-content-center align-items-center">
         <img
-          src="https://files.cercomp.ufg.br/weby/up/1/o/Marca_UFG_cor_horizontal-04.png"
+          src="https://files.cercomp.ufg.br/weby/up/142/o/Marca_na_Horizontal_01.png?1432341883"
+          width="150px"  
           alt="UFG"
           class="img-fluid mb-4 mt-5 mt-sm-auto"
-          width="150"
         />
       </div>
       <div class="d-flex justify-content-center align-items-center">
         <div class="card">
           <div class="card-body">
             <h5 class="mb-3">Sistema de Avaliação Docente</h5>
-            <form enctype="application/x-www-form-urlencoded" action="auth?email=email&password=password" method="POST">
+            <form
+              enctype="application/x-www-form-urlencoded"
+              action="auth?email=email&password=password"
+              method="POST"
+            >
               <div class="form-group">
                 <label for="exampleInputEmail1">Email</label>
                 <div class="input-group mb-3">
@@ -127,13 +202,25 @@
       integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
       crossorigin="anonymous"
     ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"
+      integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     <script>
       const queryString = window.location.search;
       const urlParams = new URLSearchParams(queryString);
-      const errorMessage = urlParams.get('errorMessage');
-
-      console.log(errorMessage);
+      const errorMessage = urlParams.get("errorMessage");
+      if (errorMessage) {
+        Swal.fire({
+          title: errorMessage,
+          icon: "error",
+          allowOutsideClick: true,
+          allowEscapeKey: true,
+          showConfirmButton: false,
+        });
+      }
     </script>
   </body>
 </html>
