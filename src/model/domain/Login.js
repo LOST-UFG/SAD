@@ -2,9 +2,9 @@ const Docente = require("./../../repository/Docente");
 module.exports = class Login {
   user = null;
 
-  validarLogin(email, senha) {
+  async validarLogin(email, senha) {
     this.user = new Docente();
 
-    this.user.validarLogin(email, senha);
+    return await this.user.validarLogin(email, senha);
   }
 };
