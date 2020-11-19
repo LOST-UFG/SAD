@@ -10,7 +10,9 @@ module.exports = class Login {
     this.senha = senha;
 
     this.loginDomain = new LoginDomain();
+  }
 
-    this.loginDomain.validarLogin(email, senha);
+  async validarLogin() {
+    return await this.loginDomain.validarLogin(this.email, this.senha);
   }
 };
