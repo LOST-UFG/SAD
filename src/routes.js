@@ -18,11 +18,9 @@ routes.get("/", async (request, response) => {
   sess = request.session;
 
   if (!sess.user) {
-    fs.readFile("./src/view/Login/index.html", (error, html) => {
-      response.end(html);
-    });
+    response.redirect("/login");
   } else {
-    console.log("zzzz");
+    response.redirect("/search");
     response.end();
   }
 });
