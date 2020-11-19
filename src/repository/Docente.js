@@ -57,7 +57,7 @@ module.exports = class Docente {
       return {
         error: {
           errorCode: 500,
-          errorMessage: "Erro ao encontrar usuário. Contate o suporte.",
+          errorMessage: "Usuário não encontrado. Tente novamente.",
         },
       };
     }
