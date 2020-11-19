@@ -19,70 +19,83 @@
 
     <style>
       body {
-        background-color: #3167AD;
+        background-color: #3167ad;
       }
       #navigation {
-        background-color: #3167AD;
+        background-color: #3167ad;
         color: #ffffff;
-        margin-top: 5px!important;
+        margin-top: 5px !important;
       }
 
-      li > a, li > p {
+      li > a,
+      li > p {
         color: #ffffff;
         margin: auto;
         margin-left: 5px;
       }
 
       ul.nav {
-        padding: 10px 0!important;
-        
+        padding: 10px 0 !important;
       }
 
       span.text-muted {
-        color: #FFFFFF!important;
+        color: #ffffff !important;
       }
 
       div.card-body {
-        background-color: #DFE9F5!important;
-        color: #3167AD!important;
+        background-color: #dfe9f5 !important;
+        color: #3167ad !important;
         border-radius: 20px;
       }
 
-      div > a{
-        color: #FFFFFF;
+      .btn-primary {
+        background-color: #3167ad !important;
+        border-color: #3167ad !important;
+        color: #dfe9f5 !important;
       }
 
-      div.bg-white.card-footer.text-right{
-        background-color: #3167AD!important;
-        
+      div > a {
+        color: #ffffff;
+      }
+
+      div.bg-white.card-footer.text-right {
+        background-color: #3167ad !important;
       }
 
       .card {
-        border: none!important;
-        background-color: transparent!important;
+        border: none !important;
+        background-color: transparent !important;
       }
 
-      a:hover{
-        color: #DFE9F5!important;
+      a:hover {
+        color: #dfe9f5 !important;
+      }
+
+      .form-control,
+      .input-group-text {
+        border: 1px solid #dfe9f5;
+        background-color: #ffffff;
+        color: #3167ad !important;
+        min-height: 39px !important;
+      }
+
+      ::placeholder {
+        color: #3167ad !important;
       }
     </style>
     <title>SAD | Sistema de Avaliação Docente</title>
   </head>
   <body>
     <div
-    id="navigation"
-      class="border-bottom container-fluid justify-content-end d-flex align-items-center mb-5"
+      id="navigation"
+      class="container-fluid justify-content-end d-flex align-items-center mb-5"
     >
       <ul class="nav nav-pills nav-fill py-3">
         <li class="nav-item border-right">
           <a class="nav-link" href="#">Ativar contraste</a>
         </li>
-        <li class="nav-item d-none d-sm-flex">
-          <p
-            href="#"
-            tabindex="-1"
-            >Fonte:
-        </p>
+        <li class="nav-item d-none d-sm-flex ml-2">
+          <p href="#" tabindex="-1">Fonte:</p>
         </li>
         <li class="nav-item d-none d-sm-flex">
           <a class="nav-link" href="#"
@@ -94,7 +107,7 @@
             ><span class="mdi mdi-magnify-minus-outline mdi-18px"></span
           ></a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item ml-0">
           <a class="nav-link" href="#">
             <img
               src="https://ufgnet.ufg.br/cas/images/Brazil.png;jsessionid=PUpPoiuIspAVg-mVr4xI17uB.undefined"
@@ -102,7 +115,7 @@
             />
           </a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item ml-0">
           <a class="nav-link" href="#">
             <img
               src="https://ufgnet.ufg.br/cas/images/USA.png;jsessionid=PUpPoiuIspAVg-mVr4xI17uB.undefined"
@@ -110,7 +123,7 @@
             />
           </a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item ml-0">
           <a class="nav-link" href="#">
             <img
               src="https://ufgnet.ufg.br/cas/images/spain.png;jsessionid=PUpPoiuIspAVg-mVr4xI17uB.undefined"
@@ -124,15 +137,15 @@
       <div class="d-flex justify-content-center align-items-center">
         <img
           src="https://files.cercomp.ufg.br/weby/up/142/o/Marca_na_Horizontal_01.png?1432341883"
-          width="150px"  
+          width="150px"
           alt="UFG"
           class="img-fluid mb-4 mt-5 mt-sm-auto"
         />
       </div>
       <div class="d-flex justify-content-center align-items-center">
         <div class="card">
-          <div class="card-body">
-            <h5 class="mb-3">Sistema de Avaliação Docente</h5>
+          <div class="card-body p-5">
+            <h5 class="mb-3 text-center">Sistema de Avaliação Docente</h5>
             <form
               enctype="application/x-www-form-urlencoded"
               action="auth?email=email&password=password"
@@ -142,7 +155,9 @@
                 <label for="exampleInputEmail1">Email</label>
                 <div class="input-group mb-3">
                   <div class="input-group-prepend">
-                    <span class="input-group-text" id="basic-addon1">E</span>
+                    <span class="input-group-text" id="basic-addon1">
+                      <span class="mdi mdi-email-outline"></span>
+                    </span>
                   </div>
                   <input
                     type="text"
@@ -159,7 +174,9 @@
                 <label for="exampleInputPassword1">Senha</label>
                 <div class="input-group mb-3">
                   <div class="input-group-prepend">
-                    <span class="input-group-text" id="basic-addon1">S</span>
+                    <span class="input-group-text" id="basic-addon1">
+                      <span class="mdi mdi-lock-outline"></span>
+                    </span>
                   </div>
                   <input
                     type="password"
@@ -177,7 +194,7 @@
               </button>
             </form>
           </div>
-          <div class="bg-white card-footer text-right">
+          <div class="bg-white border-0 card-footer text-right">
             <a href="#">Esqueci minha senha</a><br />
             <a href="#">Ajuda</a>
           </div>
