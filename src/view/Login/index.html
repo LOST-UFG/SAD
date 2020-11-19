@@ -111,6 +111,7 @@
         </div>
       </div>
     </div>
+
     <footer class="footer mt-auto py-3">
       <div class="container text-center">
         <span class="text-muted"
@@ -128,5 +129,12 @@
       integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
       crossorigin="anonymous"
     ></script>
+    <script>
+      const queryString = window.location.search;
+      const urlParams = new URLSearchParams(queryString);
+      const errorMessage = urlParams.get('errorMessage');
+
+      console.log(errorMessage);
+    </script>
   </body>
 </html>

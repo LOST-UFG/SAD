@@ -45,8 +45,7 @@ routes.post("/auth", async (request, response) => {
   if (result instanceof Docente) {
     sess.user = result;
   } else {
-    response.redirect("/login");
-    //response.send(alert(result.error.errorMessage));
+    response.redirect(`/login?errorMessage=${result.error.errorMessage}`);
     response.end();
   }
 
