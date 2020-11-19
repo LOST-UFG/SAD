@@ -75,7 +75,6 @@ $ yarn start
 
 ## 👨‍💻 Autores
 
-Grupo Cavalo de Troia da turma de Construção de Software de 2020.1 da Universidade Federal de Goiás
 * Abigail de Jesus Arruda
 * Alan Brito Barros
 * Amanda Lobo Gomes
